@@ -1,0 +1,20 @@
+<h3>FAAH OMEGA — {{user}}</h3>
+
+<div id="online"></div>
+<div id="typing"></div>
+<div id="chat"></div>
+
+<input id="msg" oninput="typing()">
+
+<select id="expire">
+<option value="1">1 min</option>
+<option value="60">1 hour</option>
+<option value="1440">1 day</option>
+<option value="43200">30 days</option>
+</select>
+
+<input type="file" id="file">
+<button onclick="send()">Send</button>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="/static/app.js"></script>

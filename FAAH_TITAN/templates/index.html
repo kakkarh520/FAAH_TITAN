@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FAAH TITAN</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<div class="sidebar">
+<h2>FAAH</h2>
+<div id="online"></div>
+</div>
+
+<div class="chat">
+<div id="messages"></div>
+
+<div id="typing"></div>
+
+<input id="msg" placeholder="Type message..."
+oninput="typing()">
+
+<input type="file" id="file">
+
+<button onclick="send()">🎤/Send</button>
+</div>
+
+</div>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="/static/app.js"></script>
+
+</body>
+</html>
